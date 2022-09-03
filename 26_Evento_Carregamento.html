@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento de Carregamento</title>
+    <!-- JS -->
+    <script>
+
+    function mensagem(){
+        alert("Seja bem vindo ao meu site")
+    }
+
+
+    function mensagem2(){
+
+    // Pegando o curso selecionado 
+    var curso = document.getElementById("cursos").value;
+
+    alert(curso);
+    }
+
+
+    </script>
+    <!-- Fim fo JS -->
+</head>
+    <!-- onload = EVENTO DE CARREGAMENTO  -->
+    <!--  EXEMPLO EXIBIR POP IMAGEM E POR AI VAI-->
+    <!-- SO FUNCIONA NA TAG BODY,  -->
+<body onload="mensagem()">
+
+
+    <select onchange="mensagem2()" id="cursos">
+        <option> Escolha seu curso</option>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>Java</option>
+        <option>JavaScript</option>
+    </select>
+    
+</body>
+</html>

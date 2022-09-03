@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento de Teclado</title>
+    <!-- JS -->
+    <script>
+    /* 
+    onKeyUp: [ EXIBE O CARACTERE E DEPOIS EXECUTA A AÇÃO ]
+
+
+    onKeyDown: [ PRIMEIRO EXECUTA A AÇÃO E DEPOIS EXIBE O CARACTERE ]
+
+
+    onKeyPress: [ PRIMEIRO EXECUTA A AÇÃO E DEPOIS EXIBE O CARACTERE ]
+                NAO TEM SUPORTE AS SEGUINTES TECLAS
+                F1..F12, ALT, CTRL, SHIFT...
+    
+    
+    */
+
+
+    function exibir (){
+        var campo = document.getElementById("campo").value;
+
+        alert(campo);
+    }
+
+    </script>
+    <!-- Fim fo JS -->
+</head>
+<body>
+
+    <input type="text" id="campo" onkeyup="exibir()" ><p>onkeyup</p>
+    <input type="text" id="campo" onkeydown="exibir()" ><br><p>onkeydown</p>
+    <input type="text" id="campo" onkeypress="exibir()" ><br><p>onkeypress</p>
+
+    
+
+
+</body>
+</html> 
